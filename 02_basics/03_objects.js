@@ -25,7 +25,7 @@ const JsUser = {
 // console.log(JsUser);
 
 JsUser.email = "darshan@chatgpt.com"
-// Object.freeze(JsUser)
+// Object.freeze(JsUser) // freeze(JsUser) is used to stop overwriting of the object specified
 JsUser.email = "darshan@microsoft.com"
 // console.log(JsUser);
 
@@ -37,6 +37,6 @@ console.log(JsUser.greeting());
 
 JsUser.greetingTwo = function(){
     console.log(`Hello JS User ${this.name}`);   
-}
+} // function added to object
 
 console.log(JsUser.greetingTwo());
